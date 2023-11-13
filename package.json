@@ -1,0 +1,25 @@
+{
+  "name": "csscafe",
+  "version": "1.0.0",
+  "description": "First CSS page",
+  "source": "practice-css.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel --open",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidRoss85/cssCafe.git"
+  },
+  "keywords": [],
+  "author": "David Ross",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidRoss85/cssCafe/issues"
+  },
+  "homepage": "https://github.com/DavidRoss85/cssCafe#readme",
+  "devDependencies": {
+    "parcel": "^2.10.2"
+  }
+}
