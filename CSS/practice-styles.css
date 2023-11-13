@@ -1,0 +1,105 @@
+:root{
+    --menu-highlights-color: rgb(100,255,100);
+    --title-color: rgb(255,255,255);
+    --default-font-size:2vw;
+    --menu-background-color: rgb(0,0,0);
+    --menu-border-color:rgb(0,0,0);
+    --menu-font-color:rgb(255,255,255);
+    --menu-title-color:white;
+    --menu-size-ratio:60%;
+    --floating-border-color: rgb(255,255,255);
+    --floating-background-color: rgb(0,0,0);
+    --floating-size-ratio:30%;
+}
+body {
+    background: black  no-repeat;
+    background-image: url("../images/Menu-background-1.jpg");
+    /*Image by valeria_aksakova on Freepik 
+    "https://www.freepik.com/free-photo/vintage-old-rustic-cutlery-dark_6216945.htm#query=menu%20background&position=5&from_view=keyword&track=ais"*/
+    background-size: 100%;
+    background-position-x: left;
+    background-position-y: top;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size:var(--default-font-size);
+    color: var(--menu-font-color);
+    
+}
+
+h1 {
+    color: var(--title-color);
+    font: 270% Garamond, Helvetica, serif;
+    text-align:right;
+    padding-bottom: 0.5vw; 
+    width:100%;
+}
+
+
+
+label {
+    display: block;
+}
+
+
+.food-menu{
+    float:left;
+    clear:left; 
+    border:3px solid var(--menu-border-color); 
+    width:var(--menu-size-ratio);
+    background: var(--menu-background-color);
+    opacity: 0.85;
+    border-radius: 3vw;
+    font-size: calc(var(--menu-size-ratio) * 1.67);
+    & h2{
+        font: bold 125% Arial, serif;
+        text-align: center;
+        color:var(--menu-title-color);
+    }
+    & table {
+        width: 80%;
+        margin:auto;
+        text-align: left;
+        padding-bottom: 1vw;
+        border-spacing: 1vw;
+        font-size: 100%;
+        & th{
+            color: var(--menu-highlights-color);
+        }
+    }
+    
+    & thead {
+        text-align: left;
+    }
+    & tbody tr:hover {
+        opacity: 0.4;
+        background-color: var(--menu-highlights-color);
+        color: black;
+    }
+}
+.floating-right{
+    float:right;
+    clear:right; 
+    width:var(--floating-size-ratio);
+    background: var(--floating-background-color);
+    opacity: 0.85;
+    border:2px solid var(--floating-border-color);
+    border-radius:1vw;
+    margin-top: 0.5vw;
+    font: Garamond, Helvetica, serif;
+    padding: 1%;
+    font-size: calc(var(--floating-size-ratio) * 2);
+    & h2 {
+       
+        font-size: 115%;
+        color: var(--menu-highlights-color);   
+    }
+    & input{
+        font-size: 80%;
+        width:80%;
+        padding-bottom:0.5vw;
+    }
+}
+
+
+#submit-btn {
+    display: block;
+}
