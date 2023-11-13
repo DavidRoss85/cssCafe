@@ -2,7 +2,7 @@
   "name": "csscafe",
   "version": "1.0.0",
   "description": "First CSS page",
-  "source": "practice-css.html",
+  "source": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel --open",
